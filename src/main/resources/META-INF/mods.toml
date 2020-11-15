@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="All rights reserved"
+issueTrackerURL="http://github.com/Mr-Pineapple/Minespansion/issues/"
+
+[[mods]]
+    modId="minespansion"
+    version="1.0.0"
+    displayName="Minespansion"
+    updateJSONURL="http://raw.githubusercontent.com/Mr-Pineapple/Minespansion/master/update.json"
+    displayURL="http://example.com/"
+    logoFile="minespansion.png"
+    credits="Mr. Pineapple - Code \nDinoSoup - Artist"
+    authors="Pinelog Studios"
+    description="Minespansion, adding vanilla like additions"
+
+[[dependencies.minespansion]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.minespansion]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4,)"
+    ordering="NONE"
+    side="BOTH"
