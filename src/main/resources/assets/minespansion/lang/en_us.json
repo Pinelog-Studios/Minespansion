@@ -10,5 +10,7 @@
   "item.minespansion.silver_pickaxe": "Silver Pickaxe",
   "item.minespansion.silver_axe": "Silver Axe",
   "item.minespansion.silver_hoe": "Silver Hoe",
-  "item.minespansion.silver_shovel": "Silver Shovel"
+  "item.minespansion.silver_shovel": "Silver Shovel",
+  "block.minespansion.silver_ore": "Silver Ore",
+  "block.minespansion.silver_block": "Silver Block"
 }
