@@ -1,11 +1,14 @@
 package co.uk.pinelogstudios.minespansion.core;
 
+import co.uk.pinelogstudios.minespansion.common.world.MinespansionGeneration;
 import co.uk.pinelogstudios.minespansion.core.registry.BlockList;
 import co.uk.pinelogstudios.minespansion.core.registry.GroupList;
 import co.uk.pinelogstudios.minespansion.core.registry.ItemList;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -25,7 +28,6 @@ public class Minespansion {
         registerDeferredRegistries(bus);
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -34,6 +36,11 @@ public class Minespansion {
         BlockList.BLOCKS.register(bus);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        DeferredWorkQueue.runLater(() -> {
+            MinespansionGeneration.ores();
+        });
+    }
+
     private void clientSetup(final FMLClientSetupEvent event) {}
 }
