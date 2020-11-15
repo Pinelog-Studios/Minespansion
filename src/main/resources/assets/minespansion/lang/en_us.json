@@ -1,5 +1,14 @@
 {
   "itemGroup.minespansion": "Minespansion",
   "item.minespansion.silver_ingot": "Silver Ingot",
-  "item.minespansion.silver_nugget": "Silver Nugget"
+  "item.minespansion.silver_nugget": "Silver Nugget",
+  "item.minespansion.silver_helmet": "Silver Helmet",
+  "item.minespansion.silver_chestplate": "Silver Chestplate",
+  "item.minespansion.silver_leggings": "Silver Leggings",
+  "item.minespansion.silver_boots": "Silver Boots",
+  "item.minespansion.silver_sword": "Silver Sword",
+  "item.minespansion.silver_pickaxe": "Silver Pickaxe",
+  "item.minespansion.silver_axe": "Silver Axe",
+  "item.minespansion.silver_hoe": "Silver Hoe",
+  "item.minespansion.silver_shovel": "Silver Shovel"
 }
