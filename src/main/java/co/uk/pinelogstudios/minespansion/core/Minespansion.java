@@ -1,7 +1,9 @@
 package co.uk.pinelogstudios.minespansion.core;
 
 import co.uk.pinelogstudios.minespansion.core.registry.BlockList;
+import co.uk.pinelogstudios.minespansion.core.registry.GroupList;
 import co.uk.pinelogstudios.minespansion.core.registry.ItemList;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -9,9 +11,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+/**
+ * Author: Mr. Pineapple
+ */
 @Mod(Minespansion.ID)
 public class Minespansion {
     public static final String ID = "minespansion";
+    public static final String PROTOCOL_VERSION = ID.toUpperCase();
+    public static final ItemGroup MINESPANSION_TAB = new GroupList.MinespansionGroup();
 
     public Minespansion() {
         final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -26,6 +33,7 @@ public class Minespansion {
         ItemList.ITEMS.register(bus);
         BlockList.BLOCKS.register(bus);
     }
+
     private void commonSetup(final FMLCommonSetupEvent event) {}
     private void clientSetup(final FMLClientSetupEvent event) {}
 }
