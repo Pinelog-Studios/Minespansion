@@ -1,6 +1,7 @@
 package co.uk.pinelogstudios.minespansion.core;
 
 import co.uk.pinelogstudios.minespansion.common.world.MinespansionGeneration;
+import co.uk.pinelogstudios.minespansion.core.registry.BiomeList;
 import co.uk.pinelogstudios.minespansion.core.registry.BlockList;
 import co.uk.pinelogstudios.minespansion.core.registry.GroupList;
 import co.uk.pinelogstudios.minespansion.core.registry.ItemList;
@@ -28,6 +29,8 @@ public class Minespansion {
         registerDeferredRegistries(bus);
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
+
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -37,8 +40,10 @@ public class Minespansion {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        //Must use DeferredWorkQueue for threading issues
         DeferredWorkQueue.runLater(() -> {
             MinespansionGeneration.ores();
+            MinespansionGeneration.flowers();
         });
     }
 
