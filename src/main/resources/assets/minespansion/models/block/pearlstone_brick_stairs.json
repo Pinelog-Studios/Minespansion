@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "minespansion:block/pearlstone_bricks",
+        "top": "minespansion:block/pearlstone_bricks",
+        "side": "minespansion:block/pearlstone_bricks"
+    }
+}

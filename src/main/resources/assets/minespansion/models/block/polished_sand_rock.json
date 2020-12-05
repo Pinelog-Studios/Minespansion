@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "minespansion:block/polished_sand_rock"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "minespansion:block/sand_rock_brick_slab" },
+        "type=top": { "model": "minespansion:block/sand_rock_brick_slab_top" },
+        "type=double": { "model": "minespansion:block/sand_rock_bricks" }
+    }
+}

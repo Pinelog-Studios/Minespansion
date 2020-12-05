@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "minespansion:block/pearlstone_brick_slab" },
+        "type=top": { "model": "minespansion:block/pearlstone_brick_slab_top" },
+        "type=double": { "model": "minespansion:block/pearlstone_bricks" }
+    }
+}

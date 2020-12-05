@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "minespansion:block/polished_sand_rock",
+        "top": "minespansion:block/polished_sand_rock",
+        "side": "minespansion:block/polished_sand_rock"
+    }
+}

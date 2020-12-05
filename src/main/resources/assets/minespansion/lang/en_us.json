@@ -12,5 +12,42 @@
   "item.minespansion.silver_hoe": "Silver Hoe",
   "item.minespansion.silver_shovel": "Silver Shovel",
   "block.minespansion.silver_ore": "Silver Ore",
-  "block.minespansion.silver_block": "Silver Block"
+  "block.minespansion.silver_block": "Silver Block",
+
+
+  "block.minespansion.pearlstone": "Pearlstone",
+  "block.minespansion.polished_pearlstone": "Polished Pearlstone",
+  "block.minespansion.pearlstone_bricks": "Pearlstone Bricks",
+  "block.minespansion.pearlstone_tiles": "Pearlstone Tiles",
+  "block.minespansion.chiseled_pearlstone": "Chiseled Pearlstone",
+  "block.minespansion.pearlstone_stairs": "Pearlstone Stairs",
+  "block.minespansion.polished_pearlstone_stairs": "Polished Pearlstone Stairs",
+  "block.minespansion.pearlstone_brick_stairs": "Pearlstone Brick Stairs",
+  "block.minespansion.pearlstone_slab": "Pearlstone Slab",
+  "block.minespansion.polished_pearlstone_slab": "Polished Pearlstone Slab",
+  "block.minespansion.pearlstone_brick_slab": "Pearlstone Brick Slab",
+
+  "block.minespansion.slate": "Slate",
+  "block.minespansion.polished_slate": "Polished Slate",
+  "block.minespansion.slate_bricks": "Slate Bricks",
+  "block.minespansion.slate_tiles": "Slate Tiles",
+  "block.minespansion.chiseled_slate": "Chiseled Slate",
+  "block.minespansion.slate_stairs": "Slate Stairs",
+  "block.minespansion.polished_slate_stairs": "Polished Slate Stairs",
+  "block.minespansion.slate_brick_stairs": "Slate Brick Stairs",
+  "block.minespansion.slate_slab": "Slate Slab",
+  "block.minespansion.polished_slate_slab": "Polished Slate Slab",
+  "block.minespansion.slate_brick_slab": "Slate Brick Slab",
+
+  "block.minespansion.sand_rock": "Sand Rock",
+  "block.minespansion.polished_sand_rock": "Polished Sand Rock",
+  "block.minespansion.sand_rock_bricks": "Sand Rock Bricks",
+  "block.minespansion.sand_rock_tiles": "Sand Rock Tiles",
+  "block.minespansion.chiseled_sand_rock": "Chiseled Sand Rock",
+  "block.minespansion.sand_rock_stairs": "Sand Rock Stairs",
+  "block.minespansion.polished_sand_rock_stairs": "Polished Sand Rock Stairs",
+  "block.minespansion.sand_rock_brick_stairs": "Sand Rock Brick Stairs",
+  "block.minespansion.sand_rock_slab": "Sand Rock Slab",
+  "block.minespansion.polished_sand_rock_slab": "Polished Sand Rock Slab",
+  "block.minespansion.sand_rock_brick_slab": "Sand Rock Brick Slab"
 }

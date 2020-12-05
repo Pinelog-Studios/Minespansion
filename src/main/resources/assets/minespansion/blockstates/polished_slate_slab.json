@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "minespansion:block/polished_slate_slab" },
+        "type=top": { "model": "minespansion:block/polished_slate_slab_top" },
+        "type=double": { "model": "minespansion:block/polished_slate" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "minespansion:block/polished_slate",
+        "top": "minespansion:block/polished_slate",
+        "side": "minespansion:block/polished_slate"
+    }
+}

@@ -1,13 +1,11 @@
 package co.uk.pinelogstudios.minespansion.core;
 
 import co.uk.pinelogstudios.minespansion.common.world.MinespansionGeneration;
-import co.uk.pinelogstudios.minespansion.core.registry.BiomeList;
 import co.uk.pinelogstudios.minespansion.core.registry.BlockList;
 import co.uk.pinelogstudios.minespansion.core.registry.GroupList;
 import co.uk.pinelogstudios.minespansion.core.registry.ItemList;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
@@ -18,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 /**
  * Author: Mr. Pineapple
  */
+@SuppressWarnings("deprecation")
 @Mod(Minespansion.ID)
 public class Minespansion {
     public static final String ID = "minespansion";
