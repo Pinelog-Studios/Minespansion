@@ -26,11 +26,9 @@ public class BlockList {
     public static final RegistryObject<Block> PEARLSTONE_BRICKS = createStoneBlock("pearlstone_bricks");
     public static final RegistryObject<Block> PEARLSTONE_TILES = createStoneBlock("pearlstone_tiles");
     public static final RegistryObject<Block> CHISELED_PEARLSTONE = createStoneBlock("chiseled_pearlstone");
-
     public static final RegistryObject<Block> PEARLSTONE_STAIRS = createStoneStair(PEARLSTONE, "pearlstone_stairs");
     public static final RegistryObject<Block> POLISHED_PEARLSTONE_STAIRS = createStoneStair(POLISHED_PEARLSTONE, "polished_pearlstone_stairs");
     public static final RegistryObject<Block> PEARLSTONE_BRICK_STAIRS = createStoneStair(PEARLSTONE_BRICKS, "pearlstone_brick_stairs");
-
     public static final RegistryObject<Block> PEARLSTONE_SLAB = createStoneSlab("pearlstone_slab");
     public static final RegistryObject<Block> POLISHED_PEARLSTONE_SLAB = createStoneSlab("polished_pearlstone_slab");
     public static final RegistryObject<Block> PEARLSTONE_BRICK_SLAB = createStoneSlab("pearlstone_brick_slab");

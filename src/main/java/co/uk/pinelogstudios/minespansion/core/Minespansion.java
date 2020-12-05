@@ -41,8 +41,7 @@ public class Minespansion {
     private void commonSetup(final FMLCommonSetupEvent event) {
         //Must use DeferredWorkQueue for threading issues
         DeferredWorkQueue.runLater(() -> {
-            MinespansionGeneration.ores();
-            MinespansionGeneration.flowers();
+            MinespansionGeneration.init();
         });
     }
 

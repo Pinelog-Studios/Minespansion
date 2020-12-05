@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minespansion:pearlstone_stairs",
+    "minespansion:polished_pearlstone_stairs",
+    "minespansion:pearlstone_brick_stairs",
+
+    "minespansion:slate_stairs",
+    "minespansion:polished_slate_stairs",
+    "minespansion:slate_brick_stairs",
+
+    "minespansion:sand_rock_stairs",
+    "minespansion:polished_sand_rock_stairs",
+    "minespansion:sand_rock_brick_stairs"
+  ]
+}

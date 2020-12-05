@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minespansion:pearlstone_slab",
+    "minespansion:polished_pearlstone_slab",
+    "minespansion:pearlstone_brick_slab",
+
+    "minespansion:slate_slab",
+    "minespansion:polished_slate_slab",
+    "minespansion:slate_brick_slab",
+
+    "minespansion:sand_rock_slab",
+    "minespansion:polished_sand_rock_slab",
+    "minespansion:sand_rock_brick_slab"
+  ]
+}
