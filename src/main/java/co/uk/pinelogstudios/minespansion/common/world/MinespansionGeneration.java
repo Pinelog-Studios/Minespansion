@@ -27,7 +27,6 @@ import java.util.ArrayList;
 public class MinespansionGeneration {
 
     private static final ArrayList<ConfiguredFeature<?, ?>> ores = new ArrayList<ConfiguredFeature<?, ?>>();
-    private static final ArrayList<ConfiguredFeature<?, ?>> flowers = new ArrayList<ConfiguredFeature<?, ?>>();
     private static final ArrayList<ConfiguredFeature<?, ?>> stones = new ArrayList<>();
     private static ConfiguredFeature<?, ?> frostberry;
     private static ConfiguredFeature<?, ?> sand_rock;
@@ -39,16 +38,6 @@ public class MinespansionGeneration {
                 .func_242731_b(64)));
     }
 
-    private static void flowers() {
-        flowers.add(register("frostberry_generation", Feature.FLOWER.withConfiguration(new BlockClusterFeatureConfig.Builder(
-                new SimpleBlockStateProvider(
-                        BlockList.FROSTBERRY_BUSH.get().getDefaultState()
-                ), SimpleBlockPlacer.PLACER
-        ).tries(64).build())
-                .withPlacement(Features.Placements.VEGETATION_PLACEMENT)
-                .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-        .func_242731_b(2)));
-    }
 
     private static void stones() {
         stones.add(register("pearlstone", Feature.ORE.withConfiguration(new OreFeatureConfig(
@@ -73,13 +62,12 @@ public class MinespansionGeneration {
                             Blocks.ICE,
                             Blocks.BLUE_ICE,
                             Blocks.FROSTED_ICE,
-                            Blocks.BLUE_ICE
+                            Blocks.PACKED_ICE
                     )).func_227317_b_().build()).withPlacement(Features.Placements.PATCH_PLACEMENT).chance(12));
     }
 
     public static void init() {
         ores();
-        flowers();
         stones();
         setSandRock();
         setFrostberry();
@@ -92,10 +80,6 @@ public class MinespansionGeneration {
             if(ore != null) generation.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, ore);
         }
 
-        for(ConfiguredFeature<?, ?> flower : flowers) {
-            if(flower != null) generation.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, flower);
-        }
-
         for(ConfiguredFeature<?, ?> stone : stones) {
             if(stone != null) generation.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, stone);
         }
@@ -104,9 +88,7 @@ public class MinespansionGeneration {
             generation.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, sand_rock);
         }
 
-        if(event.getCategory() == Biome.Category.ICY || event.getCategory() == Biome.Category.OCEAN) {
             generation.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, frostberry);
-        }
     }
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {

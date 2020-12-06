@@ -1,10 +1,8 @@
 package co.uk.pinelogstudios.minespansion.common.blocks;
 
 import co.uk.pinelogstudios.minespansion.core.registry.BlockList;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.SweetBerryBushBlock;
+import co.uk.pinelogstudios.minespansion.core.registry.TagList;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -16,6 +14,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 
 /*
@@ -24,6 +23,18 @@ import net.minecraft.world.World;
 public class FrostberryBush extends SweetBerryBushBlock {
     public FrostberryBush() {
         super(AbstractBlock.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH));
+    }
+
+    @Override
+    protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        Block block = state.getBlock();
+        return block.isIn(TagList.Blocks.FROSTBERRY_BASE_BLOCKS);
+    }
+
+    @Override
+    public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
+        BlockPos blockpos = pos.down();
+        return this.isValidGround(worldIn.getBlockState(blockpos), worldIn, blockpos);
     }
 
     @Override
